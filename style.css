@@ -41,8 +41,8 @@
   margin: 0 auto 0;
 
 }
-.task-label, 
-.task-input {
+.task__item-label, 
+.task__item-input {
 
   width: 56%;
   display: inline-block;
@@ -60,20 +60,20 @@ ul {
   padding: 0px;
 
 }
-.task-item, 
+.task__item, 
 .title {
 
   list-style: none;
 
 }
 
-.task-input, 
-.btn {
+.task__item-input, 
+.task__item-btn {
 
   outline: none;
 
 }
-.btn {
+.task__item-btn {
 
   background: none;
   border: 0px;
@@ -91,7 +91,7 @@ ul {
 }
 /* Heading */
 .title,
-.task-label[for="new-task"] {
+.task__item-label[for="new-task"] {
 
   color: #333;
   font-weight: 700;
@@ -102,7 +102,7 @@ ul {
   text-transform: uppercase;
 
 }
-.task-input[type="text"] {
+.task__item-input[type="text"] {
 
   margin: 0;
   font-size: 18px;
@@ -116,14 +116,14 @@ ul {
   color: #888;
 
 }
-.task-input[type="text"]:focus {
+.task__item-input[type="text"]:focus {
 
   color: #333;
 
 }
 
 /* New Task */
-.task-label[for="new-task"] {
+.task__item-label[for="new-task"] {
 
   display: block;
   margin: 0 0 20px;
@@ -136,7 +136,7 @@ ul {
 }
 
 /* Task list */
-.task-item {
+.task__item {
 
   overflow: hidden;
   padding: 20px 0;
@@ -146,21 +146,21 @@ ul {
   align-items: center;
 
 }
-.task-item > 
+.task__item > 
 * {
 
   vertical-align: middle;
 
 }
 
-.task-item > 
-.task-input[type="checkbox"] {
+.task__item > 
+.task__item-input[type="checkbox"] {
 
   margin: 0 10px;
 
 }
-.task-item > 
-.task-label {
+.task__item > 
+.task__item-label {
 
   padding-left: 10px;
   box-sizing: border-box;
@@ -168,13 +168,13 @@ ul {
   width: 226px;
 
 }
-.task-item > 
-.task-input[type="text"] {
+.task__item > 
+.task__item-input[type="text"] {
 
   width: 226px;
 
 }
-.btn.delete 
+.task__item-btn_delete 
 .remove-image {
 
   height: 2em;
@@ -182,7 +182,7 @@ ul {
   transition: transform 200ms ease-in;
 
 }
-.btn.delete 
+.task__item-btn_delete 
 .remove-image:hover {
 
   transform: rotateZ(0);
@@ -191,7 +191,7 @@ ul {
 
 /* Completed */
 #completed-tasks 
-.task-label {
+.task__item-label {
 
   text-decoration: line-through;
   color: #888;
@@ -199,26 +199,26 @@ ul {
 }
 
 /* Edit Task */
-.tasks 
-.task-item 
-.task-input[type="text"] {
+.task 
+.task__item 
+.task__item-input[type="text"] {
 
   display: none;
 
 }
 
-.tasks 
-.task-item.edit-mode 
-.task-input[type="text"] {
+.task 
+.task__item-edit_mode
+.task__item-input[type="text"] {
 
   display: inline-block;
   width: 224px;
 
 }
 
-.tasks 
-.task-item.edit-mode 
-.task-label {
+.task 
+.task__item-edit_mode
+.task__item-label {
 
   display: none;
 
